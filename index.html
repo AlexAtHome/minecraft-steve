@@ -11,72 +11,99 @@
 </head>
 
 <body>
-	<h1>Minecraft player model in pure CSS</h1>
+	<main class="layout">
+		<div class="form">
+			<h1>Minecraft player model in pure CSS</h1>
+			<fieldset>
+				<legend>Rotation and size</legend>
+				<label>
+					X axis
+					<input class="rotate" type="range" min="0" max="360" value="0">
+				</label>
+				<label>
+					Y axis
+					<input class="rotate" data-axis="y" type="range" min="0" max="360" value="0">
+				</label>
+				<label>
+					Size:
+					<input class="size" type="range" min="50" max="750" value="100">
+				</label>
+			</fieldset>
 
-	<section>
-		<input class="rotate" data-target="steve" type="range" min="0" max="360" value="0">
-		<input class="rotate" data-target="steve" data-axis="y" type="range" min="0" max="360" value="0">
-		<input class="size" data-target="steve" type="range" min="50" max="750" value="100">
-
-		<div class="container">
-			<div class="model steve" id="steve">
-				<div class="row">
-					<div class="cuboid cube steve__head">
-						<div class="face front"></div>
-						<div class="face rear"></div>
-						<div class="face left"></div>
-						<div class="face right"></div>
-						<div class="face top"></div>
-						<div class="face bottom"></div>
+			<fieldset>
+				<legend>Skin</legend>
+				<label>
+					Skin URL:
+					<input type="url" id="skin-url">
+				</label>
+				<div>or</div>
+				<label>
+					Choose from file:
+					<input type="file" id="skin-file" accept="image/png">
+				</label>
+			</fieldset>
+		</div>
+		<div class="preview">
+			<div class="container">
+				<div class="model steve" id="steve">
+					<div class="row">
+						<div class="cuboid cube steve__head">
+							<div class="face front"></div>
+							<div class="face rear"></div>
+							<div class="face left"></div>
+							<div class="face right"></div>
+							<div class="face top"></div>
+							<div class="face bottom"></div>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="cuboid steve__left-hand">
-						<div class="face front"></div>
-						<div class="face rear"></div>
-						<div class="face left"></div>
-						<div class="face right"></div>
-						<div class="face top"></div>
-						<div class="face bottom"></div>
+					<div class="row">
+						<div class="cuboid steve__left-hand">
+							<div class="face front"></div>
+							<div class="face rear"></div>
+							<div class="face left"></div>
+							<div class="face right"></div>
+							<div class="face top"></div>
+							<div class="face bottom"></div>
+						</div>
+						<div class="cuboid steve__torso">
+							<div class="face front"></div>
+							<div class="face rear"></div>
+							<div class="face left"></div>
+							<div class="face right"></div>
+							<div class="face top"></div>
+							<div class="face bottom"></div>
+						</div>
+						<div class="cuboid steve__right-hand">
+							<div class="face front"></div>
+							<div class="face rear"></div>
+							<div class="face left"></div>
+							<div class="face right"></div>
+							<div class="face top"></div>
+							<div class="face bottom"></div>
+						</div>
 					</div>
-					<div class="cuboid steve__torso">
-						<div class="face front"></div>
-						<div class="face rear"></div>
-						<div class="face left"></div>
-						<div class="face right"></div>
-						<div class="face top"></div>
-						<div class="face bottom"></div>
-					</div>
-					<div class="cuboid steve__right-hand">
-						<div class="face front"></div>
-						<div class="face rear"></div>
-						<div class="face left"></div>
-						<div class="face right"></div>
-						<div class="face top"></div>
-						<div class="face bottom"></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="cuboid steve__left-leg">
-						<div class="face front"></div>
-						<div class="face rear"></div>
-						<div class="face left"></div>
-						<div class="face right"></div>
-						<div class="face top"></div>
-						<div class="face bottom"></div>
-					</div>
-					<div class="cuboid steve__right-leg">
-						<div class="face front"></div>
-						<div class="face rear"></div>
-						<div class="face left"></div>
-						<div class="face right"></div>
-						<div class="face top"></div>
-						<div class="face bottom"></div>
+					<div class="row">
+						<div class="cuboid steve__left-leg">
+							<div class="face front"></div>
+							<div class="face rear"></div>
+							<div class="face left"></div>
+							<div class="face right"></div>
+							<div class="face top"></div>
+							<div class="face bottom"></div>
+						</div>
+						<div class="cuboid steve__right-leg">
+							<div class="face front"></div>
+							<div class="face rear"></div>
+							<div class="face left"></div>
+							<div class="face right"></div>
+							<div class="face top"></div>
+							<div class="face bottom"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</main>
 
 	<script src="main.js" defer></script>
 </body>

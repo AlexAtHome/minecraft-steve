@@ -17,3 +17,14 @@ body {
 		transform: rotateX(360deg) rotateY(360deg);
 	}
 }
+
+.layout {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.form label {
+	display: block;
+}
