@@ -1,0 +1,19 @@
+body {
+	background-color: #222;
+	color: #fafafa;
+	font-family: Cantarell, Ubuntu, Segoe UI, sans-serif;
+}
+
+.spin {
+	animation: spin 5s infinite linear;
+}
+
+@keyframes spin {
+	from {
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+
+	to {
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
